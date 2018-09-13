@@ -24,5 +24,10 @@ namespace RegistroArticulos
             registro.Show();
 
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
