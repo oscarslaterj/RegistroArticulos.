@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RegistroArticulos.UI.Consultas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace RegistroArticulos
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void registroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroArticulo registro = new RegistroArticulo();
+            registro.Show();
+
         }
     }
 }
