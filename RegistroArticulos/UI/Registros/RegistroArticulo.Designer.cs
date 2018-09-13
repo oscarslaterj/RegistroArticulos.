@@ -72,7 +72,7 @@
             this.Descripcion.Name = "Descripcion";
             this.Descripcion.Size = new System.Drawing.Size(63, 13);
             this.Descripcion.TabIndex = 2;
-            this.Descripcion.Text = "Descripcion";
+            this.Descripcion.Text = "Descripción";
             // 
             // DescripciontextBox
             // 
