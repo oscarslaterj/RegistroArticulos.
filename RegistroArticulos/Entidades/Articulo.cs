@@ -13,6 +13,7 @@ namespace RegistroArticulos.Entidades
 
         public int ArticuloId { get; set; }
         public DateTime FechaVencimiento { get; set; }
+        public String Descripcion { get; set; }
         public double Precio { get; set; }
         public int Existencia { get; set; }
         public int CantidadCotizada { get; set; }
@@ -21,6 +22,7 @@ namespace RegistroArticulos.Entidades
         {
             ArticuloId = 0;
             FechaVencimiento = DateTime.Now;
+            Descripcion = string.Empty;
             Precio = 0;
             Existencia = 0;
             CantidadCotizada = 0;
