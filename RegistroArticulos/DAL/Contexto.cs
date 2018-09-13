@@ -8,7 +8,7 @@ using RegistroArticulos.Entidades;
 
 namespace RegistroArticulos.DAL
 {
-    public class Contexto
+    public class Contexto : DbContext
     {
         public DbSet<Articulo> Articulo { get; set; }
 
