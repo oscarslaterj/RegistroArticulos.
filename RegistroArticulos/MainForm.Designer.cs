@@ -59,8 +59,8 @@
             // consultasToolStripMenuItem
             // 
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.consultasToolStripMenuItem.Text = "Consultas";
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.consultasToolStripMenuItem.Text = "Consulta";
             // 
             // ayudaToolStripMenuItem
             // 

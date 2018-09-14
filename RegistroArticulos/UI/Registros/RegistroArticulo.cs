@@ -160,6 +160,7 @@ namespace RegistroArticulos.UI.Consultas
             }
         }
 
+
         private void Eliminarbutton_Click(object sender, EventArgs e)
         {
             int id;
@@ -172,6 +173,8 @@ namespace RegistroArticulos.UI.Consultas
             else
                 MessageBox.Show("no se pudo eliminar");
         }
+
+
         
         //Validando Textbox para que permita solo numeros
         private void ExistenciatextBox_KeyPress(object sender, KeyPressEventArgs e)
