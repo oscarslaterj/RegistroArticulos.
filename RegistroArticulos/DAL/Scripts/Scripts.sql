@@ -5,8 +5,8 @@ GO
 CREATE TaBLE Articulos
 (
 Id int primary key identity,
-Precio decimal,
+Precio varchar(10),
 Descripcion varchar(30),
-Existencia int,
-CantidadCotizada int 
+Existencia varchar(10),
+CantidadCotizada varchar(10)
 );
