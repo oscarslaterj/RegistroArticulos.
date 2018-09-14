@@ -29,5 +29,11 @@ namespace RegistroArticulos
         {
 
         }
+
+        private void consultasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultaArticulos consulta = new ConsultaArticulos();
+            consulta.Show();
+        }
     }
 }
