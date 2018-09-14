@@ -28,26 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaArticulos));
+            this.FiltrocomboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ConsultadataGridView = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CriteriotextBox = new System.Windows.Forms.TextBox();
             this.Consultabutton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.DesdedateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.HastadateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConsultadataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // FiltrocomboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 39);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 0;
+            this.FiltrocomboBox.FormattingEnabled = true;
+            this.FiltrocomboBox.Location = new System.Drawing.Point(12, 39);
+            this.FiltrocomboBox.Name = "FiltrocomboBox";
+            this.FiltrocomboBox.Size = new System.Drawing.Size(121, 21);
+            this.FiltrocomboBox.TabIndex = 0;
             // 
             // label1
             // 
@@ -58,15 +59,15 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Filtro";
             // 
-            // dataGridView1
+            // ConsultadataGridView
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 108);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(588, 238);
-            this.dataGridView1.TabIndex = 2;
+            this.ConsultadataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ConsultadataGridView.BackgroundColor = System.Drawing.SystemColors.Menu;
+            this.ConsultadataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ConsultadataGridView.Location = new System.Drawing.Point(0, 108);
+            this.ConsultadataGridView.Name = "ConsultadataGridView";
+            this.ConsultadataGridView.Size = new System.Drawing.Size(588, 238);
+            this.ConsultadataGridView.TabIndex = 2;
             // 
             // label2
             // 
@@ -77,12 +78,12 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Criterio";
             // 
-            // textBox1
+            // CriteriotextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(162, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(308, 20);
-            this.textBox1.TabIndex = 4;
+            this.CriteriotextBox.Location = new System.Drawing.Point(162, 39);
+            this.CriteriotextBox.Name = "CriteriotextBox";
+            this.CriteriotextBox.Size = new System.Drawing.Size(308, 20);
+            this.CriteriotextBox.TabIndex = 4;
             // 
             // Consultabutton
             // 
@@ -93,6 +94,7 @@
             this.Consultabutton.TabIndex = 5;
             this.Consultabutton.Text = "Consulta";
             this.Consultabutton.UseVisualStyleBackColor = false;
+            this.Consultabutton.Click += new System.EventHandler(this.Consultabutton_Click);
             // 
             // label3
             // 
@@ -135,20 +137,21 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(586, 343);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.HastadateTimePicker);
             this.Controls.Add(this.DesdedateTimePicker);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Consultabutton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.CriteriotextBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.ConsultadataGridView);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.FiltrocomboBox);
             this.Name = "ConsultaArticulos";
-            this.Text = "ConsultaArticulos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Text = "Consulta de Articulos";
+            ((System.ComponentModel.ISupportInitialize)(this.ConsultadataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,11 +159,11 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox FiltrocomboBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView ConsultadataGridView;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox CriteriotextBox;
         private System.Windows.Forms.Button Consultabutton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker DesdedateTimePicker;
