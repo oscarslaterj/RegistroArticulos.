@@ -109,11 +109,18 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
     <Folder Include="UI\Reportes\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DAL\Scripts\Scripts.sql" />
+    <Content Include="Resources\1--2451248-blue puzzle in conceptual form for your text or background.jpg" />
+    <Content Include="Resources\archivo-nuevo.png" />
+    <Content Include="Resources\bg.jpg" />
+    <Content Include="Resources\bolsa-de-la-compra.png" />
+    <Content Include="Resources\eliminar-archivo-simbolo-de-interfaz.png" />
+    <Content Include="Resources\fondo2.png" />
+    <Content Include="Resources\guardar.png" />
+    <Content Include="Resources\lupa-de-busqueda.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
