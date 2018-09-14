@@ -107,6 +107,7 @@
             this.ExistenciatextBox.Name = "ExistenciatextBox";
             this.ExistenciatextBox.Size = new System.Drawing.Size(100, 20);
             this.ExistenciatextBox.TabIndex = 6;
+            this.ExistenciatextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ExistenciatextBox_KeyPress);
             // 
             // label3
             // 

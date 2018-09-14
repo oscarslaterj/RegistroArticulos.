@@ -40,6 +40,7 @@ namespace RegistroArticulos.UI.Consultas
             return articulo;
         }
 
+        //Validando Textbox para que permita solo numeros
         private void PreciotextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (Char.IsDigit(e.KeyChar))
@@ -170,6 +171,26 @@ namespace RegistroArticulos.UI.Consultas
             }
             else
                 MessageBox.Show("no se pudo eliminar");
+        }
+        
+        //Validando Textbox para que permita solo numeros
+        private void ExistenciatextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+    if (Char.IsControl(e.KeyChar)) //permitir teclas de control como retroceso 
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                //el resto de teclas pulsadas se desactivan 
+                e.Handled = true;
+                MessageBox.Show("Introducir solo numeros", "Aviso", MessageBoxButtons.OK);
+            }
         }
     }
 }
