@@ -88,6 +88,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\Consultas\ConsultaArticulos.resx">
+      <DependentUpon>ConsultaArticulos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\RegistroArticulo.resx">
       <DependentUpon>RegistroArticulo.cs</DependentUpon>
     </EmbeddedResource>
